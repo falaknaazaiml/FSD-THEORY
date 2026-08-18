@@ -1,0 +1,60 @@
+<form>
+
+First Name:
+<input type="text"
+       pattern="[A-Za-z ]+"
+       required>
+
+<br><br>
+
+Email:
+<input type="email"
+       required>
+
+<br><br>
+
+Password:
+<input type="password"
+       minlength="8"
+       required>
+
+<br><br>
+
+Age:
+<input type="number"
+       min="18"
+       max="60"
+       required>
+
+<br><br>
+
+Mobile:
+<input type="tel"
+       pattern="[0-9]{10}"
+       required>
+
+<br><br>
+
+Gender:
+<input type="radio" name="gender" required> Male
+<input type="radio" name="gender"> Female
+
+<br><br>
+
+Country:
+<select required>
+    <option value="">Select Country</option>
+    <option>India</option>
+    <option>USA</option>
+</select>
+
+<br><br>
+
+Address:
+<textarea required minlength="20"></textarea>
+
+<br><br>
+
+<input type="submit" value="Submit">
+
+</form>
