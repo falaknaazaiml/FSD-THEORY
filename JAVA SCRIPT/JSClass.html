@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript ES6 Class Example</title>
+</head>
+<body>
+
+    <h2>JavaScript ES6 Class Example</h2>
+    <p>Open the browser console (F12 → Console) to view the output.</p>
+
+    <script>
+        // Defining a class using ES6
+        class Vehicle {
+
+            // Constructor
+            constructor(name, maker, engine) {
+                this.name = name;
+                this.maker = maker;
+                this.engine = engine;
+            }
+
+            // Method
+            getDetails() {
+                return `The name of the bike is ${this.name}.`;
+            }
+        }
+
+        // Creating objects
+        let bike1 = new Vehicle("CBIT", "Suzuki", "1340cc");
+        let bike2 = new Vehicle("MGIT", "Kawasaki", "998cc");
+
+        // Display in Console
+        console.log("Bike 1 Name:", bike1.name);
+        console.log("Bike 2 Maker:", bike2.maker);
+        console.log("Bike 1 Engine:", bike1.engine);
+        console.log(bike1.getDetails());
+
+        console.log("-------------------------");
+
+        console.log("Bike 2 Name:", bike2.name);
+        console.log("Bike 2 Maker:", bike2.maker);
+        console.log("Bike 2 Engine:", bike2.engine);
+        console.log(bike2.getDetails());
+
+        // Display on Webpage
+        document.write("<h2>Output</h2>");
+
+        document.write("<h3>Bike 1 Details</h3>");
+        document.write("<p><b>Name:</b> " + bike1.name + "</p>");
+        document.write("<p><b>Maker:</b> " + bike1.maker + "</p>");
+        document.write("<p><b>Engine:</b> " + bike1.engine + "</p>");
+        document.write("<p><b>Description:</b> " + bike1.getDetails() + "</p>");
+
+        document.write("<hr>");
+
+        document.write("<h3>Bike 2 Details</h3>");
+        document.write("<p><b>Name:</b> " + bike2.name + "</p>");
+        document.write("<p><b>Maker:</b> " + bike2.maker + "</p>");
+        document.write("<p><b>Engine:</b> " + bike2.engine + "</p>");
+        document.write("<p><b>Description:</b> " + bike2.getDetails() + "</p>");
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+To run javacsript file(jsfile) in the node.js console follow the below steps
+OPEN COMMAND PROMPT
+
+C:\Users\Lenovo\Desktop>cd C:\Users\Lenovo\Desktop\FSD_ V CSM AY 2026-27\JAVA SCRIPT
+
+C:\Users\Lenovo\Desktop\FSD_ V CSM AY 2026-27\JAVA SCRIPT>node name.js
+The name of the person is CBIT MGIT
+6789
+
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Person Object</title>
+</head>
+
+<body>
+
+    <h1>Person Details</h1>
+
+    <p id="name"></p>
+    <p id="phone"></p>
+
+    <script>
+        let person = {
+            first_name: "CBIT",
+            last_name: "MGIT",
+
+            getFunction() {
+                return `The name of the person is ${this.first_name} ${this.last_name}`;
+            },
+
+            phone_number: {
+                mobile: "12345",
+                landline: "6789"
+            }
+        };
+
+        document.getElementById("name").innerHTML = person.getFunction();
+
+        document.getElementById("phone").innerHTML =
+            `Landline number: ${person.phone_number.landline}`;
+    </script>
+
+</body>
+</html>

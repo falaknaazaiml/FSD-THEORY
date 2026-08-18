@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Validation</title>
+</head>
+<body>
+
+<script>
+    let mobile = "9876543210";
+
+    let pattern = /^[6-9][0-9]{9}$/;
+
+    if (pattern.test(mobile))
+        document.write("Valid Mobile Number");
+    else
+        document.write("Invalid Mobile Number");
+</script>
+
+</body>
+</html>

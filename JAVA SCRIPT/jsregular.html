@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regular Expression Example 1</title>
+</head>
+<body>
+
+<h2>Regular Expression - test()</h2>
+
+<script>
+    let pattern = /JavaScript/;
+
+    console.log(pattern.test("I love JavaScript")); // true
+    console.log(pattern.test("I love Python"));     // false
+
+    document.write("<h3>Output</h3>");
+    document.write("I love JavaScript : " + pattern.test("I love JavaScript") + "<br>");
+    document.write("I love Python : " + pattern.test("I love Python"));
+</script>
+
+</body>
+</html>
